@@ -1,0 +1,96 @@
+.header{
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 10px;
+    z-index: 100;
+    display: flex;
+    color: white;
+    position: fixed;
+    padding: 2rem 9%;
+    align-items: center;
+    background: #000d1a;
+    justify-content: space-between;
+    box-shadow: 0.5rem 1.5rem rgba(0, 0, 0 .2);
+}
+.white-gradient{
+    left: 0;
+    width: 20rem;
+    height: 20rem;
+    border-radius:100%;
+    position: absolute;
+    filter: blur(100px);
+    background: rgba(255, 255, 255, 0.522);
+  }
+  .logo{
+    width: 0;
+    height: 0;
+    z-index: 1;
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 1.2rem;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 30px solid rgb(246, 156, 85);
+}
+  .logo > h5{
+    left: -2.21rem;
+    font-size: 1rem;
+    margin-top: 2rem;
+    position: absolute;
+    /* border-top: 4px solid #fff; */
+    
+}
+
+.header .navbar a{
+    font-size: 1.2rem;
+    margin-left: 2rem;
+}
+
+.header .navbar a:hover:not(:last-child){
+    border-bottom: 2px solid orange;
+}
+.menu-btn{
+    display: none;
+}
+@media (max-width:768px) {
+    .menu-btn{
+        display: block;
+    }
+    .header .navbar {
+        gap: 1rem;
+        top: 4rem;
+        z-index: 99;
+        right: .7rem;
+        padding: 1rem;
+        font-weight: 500;
+        position: absolute;
+        color: var(--black);
+        background: white;
+        border-radius: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+        transition: all 300ms ease-in;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+    }
+    .header .navbar a.btn{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+.header .navbar>*:hover{
+    cursor: pointer;
+}
+    /* .header .navbar{
+        top: 115%;
+        right: 2rem;
+        width: 30rem;
+        background: white;
+        box-shadow: 0px 5px 15px rgb(246, 156, 85);
+    }
+    .header .navbar a{
+        margin: 2.5rem;
+        font-size: 2rem;
+        display: block;
+    } */
+}

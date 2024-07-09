@@ -1,0 +1,39 @@
+.f-wrapper{
+    background-color: var(--black);
+}
+.f-container{
+    justify-content: space-between;
+}
+.logo{
+    width: 0;
+    height: 0;
+    z-index: 1;
+    cursor: pointer;
+    position: relative;
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+    border-bottom: 30px solid rgb(246, 156, 85);
+}
+.f-left{
+    gap: 1rem;
+}
+.f-menu{
+    gap: 1.5rem;
+    color: white;
+    font-weight: 500;
+    margin-top: 1.5rem;
+}
+.f-right{
+    position: relative;
+}
+@media (max-width:768px) {
+    .f-container{justify-content: center;}
+    .f-container>div{
+        text-align: center;
+        align-items: center !important;
+    }
+    .f-left > img,
+    .f-left > span{
+        margin-left: 2rem;
+    }
+}

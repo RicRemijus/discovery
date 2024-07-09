@@ -1,0 +1,139 @@
+:root {
+  --primary:#1f3e72;
+  --secondary:rgba(255, 255, 255, 0.78);
+  --black: #131110;
+  --blue-gradient: linear-gradient(97.05deg, #4066ff 3.76%, #2949c6 100%);
+  --orange-gradient: linear-gradient(270deg, #ffb978 0%, #ff922d 100%);
+  --blue: #4066ff;
+  --lightBlue: #eeeeff;
+  --shadow: 0px 23px 21px -8px rgba(136, 160, 255, 0.25);
+
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.paddings {
+  padding: 1.5rem;
+}
+
+h1 {
+  font-size: 3.2rem;
+  line-height: 1.1;
+}
+.innerWidth{width: 100%; }
+
+.flexStart{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.flexSpaceBetween {
+  display: flex;
+  row-gap: 2rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flexEnd{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.flexColStart{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.flexColCenter{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.flexColEnd{
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  justify-content: center;
+}
+.nurseryText{
+  color: rgba(140, 139, 139);
+  font-size: 1.3rem;
+}
+.primaryText{
+  font-size: 2rem;
+  color: #1f3e72;
+  font-weight: bold;
+}
+
+.secondaryText{
+  color: rgba(140, 139, 139);
+  font-size: 0.9rem;
+}
+.orangeText{
+  color: orange;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.btn{
+  border: none;
+  color: white;
+  font-weight: 500;
+  border-radius: 4px;
+  padding:0.6rem 1.4rem;
+  transition: all 300ms ease-in;
+  background: var(--blue-gradient);
+}
+
+.btn:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+
+/*MEDIA QUERRIES*/
+@media (min-width:1536px) {
+  .innerWidth{
+    margin: auto;
+    max-width: 1280px;
+  }
+}
+
+@media (min-width:640px) {
+  .paddings {
+    padding: 4rem;
+  }
+}
+
+@media (min-width:1280px), (min-width:768px) {
+  .paddings {
+    padding: 2rem;
+  }
+}
+
+@media (max-width:640px) {
+  .primaryText {
+    font-size: 1.5rem;
+  }
+  .orangeText{
+    font-size: 1.2rem;
+  }
+  .nurseryText{
+    font-size: 1rem;
+    color: #00ffb9;
+  }
+}
+
