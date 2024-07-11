@@ -65,7 +65,7 @@ const Hero = () => {
         {/*Right Side*/}
         <div className="hero-right flexEnd">
           <div className="image-container im1">
-            <img src="./img/discovery.jpg" alt="" />
+            <img src={process.env.PUBLIC_URL +/img/discovery.jpg} alt="" />
           </div>
 
         </div>
