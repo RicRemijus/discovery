@@ -12,7 +12,7 @@ const Nav = () => {
   return (
     <div className='header'>
         <div className='white-gradient' />
-       <a href="" className="logo"><h5> Discovery</h5></a>
+       <a href="" className="logo"><img src="/img/logo1.png" alt="" /><h5>Discovery Homes</h5></a>
        <nav className="navbar flexSpaceBetween" style={getMenuStyles(openMenu)}>
         <a href="">Residencies</a>
         <a href="">Our Values</a>

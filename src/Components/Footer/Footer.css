@@ -4,7 +4,10 @@
 .f-container{
     justify-content: space-between;
 }
-.logo{
+.logo img{
+    width: 300px;
+}
+/* .logo{
     width: 0;
     height: 0;
     z-index: 1;
@@ -13,7 +16,7 @@
     border-left: 35px solid transparent;
     border-right: 35px solid transparent;
     border-bottom: 30px solid rgb(246, 156, 85);
-}
+} */
 .f-left{
     gap: 1rem;
 }

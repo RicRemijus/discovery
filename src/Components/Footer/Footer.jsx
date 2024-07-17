@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="paddings innerWidth flexSpaceBetween f-container">
             {/**Left Side */}
             <div className="flexColStart f-left">
-            <span className='logo'><h5 style={{color:"white"}}>Discovery</h5></span> <br />
+            <span className='logo'><img src="/img/logo.png" alt="" /><h5 style={{color:"white"}}>DiscoverybHomes</h5></span> <br />
 
                 <span className="secondaryText">
                     Our Vision is to make all people <br/>
@@ -40,8 +40,6 @@ const Footer = () => {
          <span style={{color:"green", fontSize:"2rem"}}> Contact me on👉  </span><FiGithub size={40} style={{color:"white"}}/></a>
          */}
         </div>
-        
-        pm run dev
     </section>
   )
 }

@@ -1,6 +1,6 @@
 import React, {useState, useEffect, useRef} from 'react';
 import './interior.css';
-import { SlideInterior } from '../../assets/SliderData';
+import { SlideInterior } from '../../assets/SlideContent';
 import {IoArrowForward, IoArrowBack} from 'react-icons/io5';
 
 const Interior = () => {
@@ -49,7 +49,7 @@ const Interior = () => {
       <div className="paddings innerWidth flexColStart i-container">
         <div className="i-head flexColStart ">
             <span className="orangeText">Best Choices</span>
-            <span className="primaryText">Popular Residencies with Stunning Interiors</span>
+            <span className="primaryText">Stunning Interiors</span>
         </div>
         {SlideInterior.map((slides,i)=>(
                     <div className="flexColCenter slide-card" key={i}>

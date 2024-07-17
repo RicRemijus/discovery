@@ -1,4 +1,4 @@
-export const SliderDate = [
+export const SliderData = [
   {
     title: "Luxury Villa in Awka, Anambra",
     price: "$4,300.000",
@@ -8,7 +8,7 @@ export const SliderDate = [
     alt: "House",
   },
   {
-    title: "Ocean-view in Victoria Island, Lagos u",
+    title: "Ocean-view in Victoria Island, Lagos",
     price: "$4,950.000",
     path: "/home",
     label: "View Home",
@@ -128,7 +128,7 @@ export const SliderDate = [
     alt: "House",
   },
   {
-    title: "Luxury House in Calabar, Cross-River me",
+    title: "Luxury House in Calabar, Cross-River",
     price: "$3,300.000",
     path: "/home",
     label: "View Home",

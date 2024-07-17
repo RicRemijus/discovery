@@ -22,7 +22,10 @@
     filter: blur(100px);
     background: rgba(255, 255, 255, 0.522);
   }
-  .logo{
+  .logzo img{
+    width: 100px;
+  }
+  /* .logo{
     width: 0;
     height: 0;
     z-index: 1;
@@ -32,7 +35,7 @@
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
     border-bottom: 30px solid rgb(246, 156, 85);
-}
+} */
   .logo > h5{
     left: -2.21rem;
     font-size: 1rem;

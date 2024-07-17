@@ -35,9 +35,9 @@ const Info = () => {
     <section className='s-wrapper'>
        <div className="s-container" ref={sRef}>
              <div className="s-left flexColStart innerWidth paddings">
-                <h1 className='orangeText'>Explore Our Modern Designs</h1>
-                <p className='primaryText'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, porro impedit quas non recusandae deserunt.</p>
-                <p className='secondaryText'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est odit veritatis voluptatem, corrupti expedita eveniet neque incidunt tempore fugit doloribus consectetur asperiores sapiente cumque beatae.</p>
+                <h1 className='orangeText'>Top Rated</h1>
+                <p className='primaryText'>Access valuable resources, market insights, and expert advice from seasoned real estate professionals.</p>
+                <p className='secondaryText'>Streamline your real estate transactions with our integrated tolls and service.</p>
                 <button className='h-button'>View Home <IoMdArrowRoundForward className="h-arrowBtns" /> </button>
              </div>
              <div className="s-right">

@@ -3,7 +3,7 @@ import './App.css'
 import Nav from './Components/Nav/Nav';
 import Hero from './Components/Hero/Hero';
 import Footer from './Components/Footer/Footer';
-import { Brands, Residencies,Interior, Info, Values, Contact, Testimonies, GetStarted  } from './Components';
+import { Brands, Residence,Interior, Info, Values, Contact, Testimonies, GetStarted } from './Components';
 
 
 
@@ -19,7 +19,7 @@ function App() {
       </div>
         <div className="app-container">
         <Brands/>
-        <Residencies/> 
+        <Residence/> 
          <Interior/>
          <Info/>
          <Values/>
