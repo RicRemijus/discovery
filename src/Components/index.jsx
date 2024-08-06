@@ -1,3 +1,4 @@
+
 import InteriorSlide from "./interiorslide/InteriorSlide";
 import Hero from "./hero/Hero";
 import Partners from "./partners/Partners";
