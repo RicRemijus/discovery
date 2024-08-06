@@ -1,47 +1,71 @@
 import React from 'react';
-import './Footer.css';
-import { FiGithub } from 'react-icons/fi';
-import {CiLocationOn} from 'react-icons/ci';
-
+import './footer.css';
+import Button from '../button/Button';
+import { Link } from 'react-router-dom';
+import { BsFacebook, BsInstagram, BsYoutube } from 'react-icons/bs';
 
 const Footer = () => {
   return (
-    <section className='f-wrapper'>
-        <div className="paddings innerWidth flexSpaceBetween f-container">
-            {/**Left Side */}
-            <div className="flexColStart f-left">
-            <span className='logo'><img src="/img/logo.png" alt="" /><h5 style={{color:"white"}}>DiscoverybHomes</h5></span> <br />
-
-                <span className="secondaryText">
-                    Our Vision is to make all people <br/>
-                    have affordable and exquisite house to live in
-                </span>
-            </div>
-            {/**Right Side */}
-            <div className="flexColStart f-right">
-                <span className='primaryText'> Address</span> <br />
-                <CiLocationOn size={30} style={{color:'white'}} />
-                <span className='secondaryText'> Abuja, Awka, Asaba, Benin, Enugwu, Portharcourt, Lagos, Uyo</span>
-              <div className="flexSpaceBetween f-menu">
-                <span>Property</span>
-                <span>Services</span>
-                <span>Products</span>
-                <span>About Us</span>
-              </div>
-              
-            </div>
+    <div className='footer'>
+        <div className="footer-subscription">
+            <p className="subscription-heading">Join the Discovery newsletter to receive our latest and best real estate deals</p>
+            <p className="subscription-text">You can unsubscribe anytime.</p>
             
+                <form className='subscription-form'>
+                    <input type="email" name="email" className="subscription-email" placeholder="Your Email" />
+                    <Button buttonStyle='btn-outline'>Subscribe</Button>
+                </form>
         </div>
-        <hr /> 
-        <div className="f-author innerWidth paddings flexColCenter">
-         <span className="nurseryText"> <a href=""> &copy; {new Date().getFullYear()} RicRemijus&trade;  <FiGithub size={40} style={{color:"green"}}/></a>. All Rights Reserved</span>
-         
-        {/* <a href="/github.com/RicRemijus" className='flexEnd'>
-         <span style={{color:"green", fontSize:"2rem"}}> Contact me on👉  </span><FiGithub size={40} style={{color:"white"}}/></a>
-         */}
+        <div className="footer-card">
+            <div className="left-footer">
+                <span className="footer-logo">    
+                <img src="./img/logo.png" alt="" />
+                <h1>Discovery Homes</h1>
+                </span>
+                <p>Own a home today!!!</p>
+            </div>
+            <div className="right-footer">
+                <div className="footer-links-wrapper">
+                    <div className="footer-link-items">
+                        <h2>About Us</h2>
+                        <Link>How it works</Link>
+                        <Link>Partners</Link>
+                        <Link>Properties</Link>
+                        <Link>Testimonials</Link>
+                        <Link>Terms of Service</Link>
+                    </div>
+                    <div className="footer-link-items">
+                        <h2>Contact Us</h2>
+                        <Link>Get started</Link>
+                        <Link>Support</Link>
+                        <Link>Agencies</Link>
+                        <Link>Sponsorship</Link>
+                        <Link>Influencers</Link>
+                    </div>
+                    <div className="footer-link-items">
+                        <h2>Branch</h2>
+                        <Link>Abuja</Link>
+                        <Link>Enugwu</Link>
+                        <Link>Lagos</Link>
+                        <Link>Owerri</Link>
+                        <Link>Port Harcourt</Link>
+                    </div>
+                    <div className="footer-link-items">
+                        <h2>Videos</h2>
+                        <Link>Submit Videos</Link>
+                        <Link>Stream Videos</Link>
+                    </div>
+                </div>
+                </div>
         </div>
-    </section>
+          <hr />
+            <span className="social-icons">
+                <Link><BsFacebook/></Link>
+                <Link><BsInstagram/></Link>
+                <Link><BsYoutube/></Link>
+            </span>
+    </div>
   )
 }
 
-export default Footer;
+export default Footer

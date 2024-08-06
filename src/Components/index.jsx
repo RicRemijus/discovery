@@ -1,11 +1,23 @@
-import Brands from "./Brands/Brands";
-import Residence from "./Residence/Residence";
-import Interior from "./Interior/Interior";
-import Info from "./Info/Info";
-import Values from "./Values/Values";
-import Contact from "./Contacts/Contact";
-import Testimonies from "./Testimonies/Testimonies";
-import GetStarted from "./GetStarted/GetStarted";
+import InteriorSlide from "./interiorslide/InteriorSlide";
+import Hero from "./hero/Hero";
+import Partners from "./partners/Partners";
+import Properties from "./properties/Properties";
+import Navbar from "./navbar/Navbar";
+import New from "./newest/New";
+import Values from "./values/Values";
+import Contact from "./contact/Contact";
+import GetStarted from "./getStarted/GetStarted";
+import Footer from "./footer/Footer";
 
-
-export  {Brands, Residence, Interior, Info, Values, Contact, Testimonies, GetStarted}
+export {
+  Hero,
+  Partners,
+  Properties,
+  InteriorSlide,
+  Navbar,
+  New,
+  Values,
+  Contact,
+  GetStarted,
+  Footer,
+};

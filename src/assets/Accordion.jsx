@@ -1,26 +1,65 @@
-import {HiShieldCheck} from 'react-icons/hi';
-import {MdCancel, MdAnalytics} from 'react-icons/md';
+import {HiShieldCheck, HiOutlineMail} from 'react-icons/hi';
+import {MdWallet, MdAnalytics, MdCall, MdHandshake} from 'react-icons/md';
+import {BsWhatsapp, BsPersonVideo3} from 'react-icons/bs';
 
-const data = [
+
+export const dropDownData = [
     {   
         id:1,
         icon:<HiShieldCheck/>,
-        heading:"Best Interest rates on the market",
-        detail:"You will have to enjoy the serene nature of this man made app. e app. We are always happy to serve you and make your home a comfotable on . We are always happy to serve you and make your home a comfotable one",
+        heading:"Dedicated Team",
+        detail:"Enjoy a hassle-free real estate experience with our comprehensive support, dedicated team and expert guidance committed to making your property dreams a reality",
     },
     {
         id:2,
-        icon:<MdCancel/>,
-        heading:"Prevent Unstable Prcices",
-        detail:"These prices can be prevented by buying these homes now !!!",
+        icon:<MdAnalytics/>,
+        heading:"Exclusive Opportunities",
+        detail:'Unlock the exclusive opportunities in the market with our extensive network and innovative approach to buying and selling homes.'
+    },
+    {
+        id:2,
+        icon:<MdWallet/>,
+        heading:"Best Prices In The Market",
+        detail:"Benefit from our in-depth market knowledge and personalized service, ensuring you find the ideal property with ease.",
     },
     {
         id:3,
-        icon:<MdAnalytics/>,
-        heading:"Best Prices in the Market",
-        detail:"Exercise your right of buying a really good and affordable home",
+        icon:<MdHandshake/>,
+        heading:"Unmatched Partnership",
+        detail:"Partner with our unmatched expertise and a tailored approach to finding or selling your home, ensuring exceptional results.",
     },
 
 ];
 
-export default data;
+
+
+export const contactData = [
+    {
+        id: 1,
+        contactIcon: <MdCall/>,
+        title: "Voice Call",
+        mobile: "08012345679",
+        action: 'Voice Call Now'
+    },
+    {
+        id: 2,
+        contactIcon: <BsWhatsapp/>,
+        title: "WhatsApp",
+        mobile: "08012345678",
+        action: "WhatsApp Now",
+    },
+    {
+        id: 3,
+        contactIcon: <BsPersonVideo3/>,
+        title: "Video Call",
+        mobile: "08012345679",
+        action: "Video Call Now"
+    },
+    {
+        id: 4,
+        contactIcon: <HiOutlineMail/>,
+        title: "Email",
+        mobile: "admin@discovery.com",
+        action: "Message Now"
+    },
+];

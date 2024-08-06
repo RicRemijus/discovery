@@ -1,25 +1,18 @@
 import React from 'react';
-import './GetStarted.css';
-import {Link} from 'react-router-dom'
+import './getStarted.css'
+import Button from '../button/Button';
 
 const GetStarted = () => {
   return (
-    <section className='g-wrapper'>
-        <div className="paddings innerWidth g-container">
-            <div className="flexColCenter inner-container">
-                <span className='primaryText'>Get Started With Discovery Homes</span>
-                <span className='orangeText'>Let's Find Your Dream Home</span>
-                <span className='secondaryText'>
-                    Subscribe and find super attractive price quotes from us.
-                    <br />
-                    Find your dream residences NOW!!!
-                </span>
-                <button className="btn">
-                    <Link to={'mailto:ricremijus@gmail.com'}>Get Started</Link>
-                </button>
-            </div>
+    <div className='get-started'>
+        <div className="get-card">
+            <h1>Get Started With Discovery</h1>
+            <h2>Find Your Residence Soon</h2>
+            <li>Subscribe and get super exciting price quotes from us</li>
+            <li>Books us for inspection to make your choice from our arrays of properties</li>
+            <Button buttonStyle='btn-primary'>Get Started</Button>
         </div>
-    </section>
+    </div>
   )
 }
 

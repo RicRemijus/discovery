@@ -1,61 +1,88 @@
-.v-container .image-container{
-    border: 8px solid #eee;
+.value-card{
+    padding: 2rem 10%;
+    background-color: #dddddd;
 }
-.v-container>div{
-    flex: 1;
+.value-content{
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 5rem;
 }
-.v-right{
-    gap: 0.5rem;
+.left-value{
+    flex: 1 1 15rem;
+}
+.left-img{
+    opacity: 0;
+    margin-top: 6rem;
+    transform: translateX(-100%);
+    animation: slideFromLeft 3s forwards;
 }
 
-.accordionItem{
-    width: 90%;
-    overflow: hidden;
-    border-radius: 8px;
-    background: white;
-    margin-bottom: 20px;
-    border: 0.1px solid #444;
+@keyframes slideFromLeft {
+    from{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
-.accordionItem:hover{
-    border-radius: 6px;
-    box-shadow: var(--shadow);
+
+.right-value{
+    flex: 1 1 15rem;
+    margin-top: 6rem;
+    flex-direction: column;
 }
-.accordionBtn{
-    width: 100%;
+.value-desc{
     padding: 1rem;
-    cursor: pointer;
-    background: white;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.value-desc h1{
+    color: #000d1a;
+    margin: 1rem 0;
+}
+.value-desc h2{
+    color: orangered;
+}
+.value-dropdown{
+    gap: 10px;
+    display: flex;
+    margin-top: 5rem;
+    flex-direction: column;
+}
+ .drop{
+    border-radius: 5px;
+} 
+.drop span{
+    display: flex;
+    padding: 10px;
+    align-items: center;
     justify-content: space-between;
 }
-.icon{
-    padding: 1px;
-    border-radius: 5px;
-    background: #eeeeff;
-}
-.icon svg{
-    fill: var(--blue);
-}
-.accordionBtn .primaryText{
-    font-size: 1.1rem;
-}
-.accordionDetail{
-    width: 90%;
-    color: #00ffb9;
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-    padding-left: 0.7rem;
-    padding-right: 1rem;
+.reveal{
+    padding: 10px;
+    margin-bottom: 0.7rem;
+    border-radius: 0 0 5px 5px;
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
-@media (max-width:1024px) {
-    .v-container{
-        flex-direction: column;
+
+@media (max-width:768px) {
+    .value-card{padding: 1rem;}
+    .value-content{
+        padding-top: 1rem;
+    }
+    .left-img{
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .right-value{
+        flex: 2;
+        margin-top: 0;
+    }
+    .value-dropdown{
+        margin-top: 0;
     }
 }
-    @media (max-width:538px) {
-        .accordionBtn > .icon{
-            display: none;
-        }
-        
-        
-    }

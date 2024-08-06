@@ -1,0 +1,121 @@
+.properties{
+  padding: 2rem 10%;
+  background-color: #dddddd;
+}
+.properties h1{
+    color: #000d1a;
+}
+.property-container{
+  gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 5rem;
+    
+}
+.property-left-text{
+    flex: 1;
+    display: flex;
+    text-align: center;
+    
+    border-radius: 10px;
+    justify-content: center;
+    background-color: #dddddd;
+}
+.property-left-text h1{
+    font-size: 1.3rem;
+    color: #000d1a;
+}
+.property-right-img-card{ 
+    flex: 2 1 25rem;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+}
+
+.slide{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    margin: 0 0.5rem;
+    position: relative;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.slide img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 10px;
+}
+.info-overlay{
+    top: 30%;
+    left: 2%;
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+    position: absolute;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.img-price{
+    color: orange;
+}
+
+@keyframes bounce {
+    0%, 100%{transform: translateY(0);}
+    50%{transform: translateY(-10px);}
+}
+.slide button{
+    top: 35%;
+    left: 2%;
+    display: flex;
+    margin-top: 1rem;
+    position: absolute;
+    animation: bounce 4s infinite;
+}
+
+.link-arrow{
+    width: 35px;
+    height: 25px;
+}
+.p-btn, .n-btn{
+    top: 50%;
+    z-index: 1;
+    width: 40px;
+    border: none;
+    height: 40px;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    background-color: #000d1a;
+}
+.btn-arrow{
+    font-size: 1.2rem;
+}
+.p-btn{left: 20px;}
+.n-btn{right: 20px;}
+.n-btn:hover, .p-btn:hover{
+    background-color: orangered;
+}
+@media (max-width:768px) {
+    .properties{
+        padding: 1rem;
+    }
+    .property-container{
+        padding-top: 2rem;
+    }
+    .property-left-text{background-color: transparent;}
+    .info-overlay{
+        /* left: 0;
+        top: auto;
+        bottom: 0;
+        font-size: 15px;
+        transform: translateY(0); */
+        font-size: 15px;
+    }
+    .p-btn, .n-btn{padding: 5px;}
+}

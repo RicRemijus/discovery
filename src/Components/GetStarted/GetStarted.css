@@ -1,80 +1,48 @@
-.g-wrapper{
-    background: #000d1a;
+.get-started{
+    padding: 2rem 10%;
+    background-color: #dddddd;
 }
-.inner-container{
-    z-index: 1;
-    width: 100%;
-    gap: 1.5rem;
-    border: none;
-    color: #fff;
-    outline: none;
-    padding: 2rem;
-    cursor: pointer;
-    text-align: center;
-    /* background: #111; */
+.get-card{
+    gap: 20px;
+    display: flex;
     border-radius: 10px;
-    position: relative;
-    /*background: #5a73d7; */
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid gray;
+    background-color: #04417d;
 }
-
-.inner-container:before{
-    top: -2px;
-    left: -2px;
-    
-    z-index: -1;
-    content: "";
-    filter: blur(1px);
-    position: absolute;
-    border-radius: 10px;
-    background-size: 400%;
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
-    transition: opacity .3s ease-in-out;
-    animation: glowing 20s linear infinite;
-    background-image: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff,
-    #7a00ff, #ff00c8, #ff0000);
+.get-card h1{
+   margin-top: 2rem;
+   color: orange;
 }
-.inner-container:hover:before{opacity: 1;}
- .inner-container:after{
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: -1;
-    content: '';
-    height: 100%;
-    background: #001;
-    position: absolute;
-    border-radius: 10px;
-} 
-/*.inner-container:active{color: #000;}
-.inner-container:active:after{background: transparent;}*/
-
-@keyframes glowing {
-    0%{background-position: 0 0;}
-    
-    50%{background-position: 400% 0;}
-    100%{background-position: 0 0;}
+.get-card h2{
+    color: rgb(6, 6, 92);
 }
-/* .inner-container{
-    gap: 1.5rem;
-    width: 100%;
-    padding: 2rem;
-    text-align: center;
-    border-radius: 10px;
-    background: #5a73d7;
-    border: 6px solid #5d77d6;
-} */
-.inner-container .primaryText{
-    color: white;
-    font-weight: 600;
+.get-card li{
+    list-style: none;
+    color: rgba(140, 139, 139);
 }
-.inner-container .secondaryText{
-    font-size:20px;
-    color: #999;
+.get-card button{
+    margin-bottom: 2rem;
 }
-.inner-container .btn{
-    border-radius: 10px;
-    background: #4161df;
-    box-shadow: var(--shadow);
-    border: 2px solid white;
+.get-card button:hover{
+    transform: scale(1.1);
+    background-color: rgb(11, 250, 11);
+}
+@media (max-width:768px) {
+    .get-started{
+        padding: 1rem;
+    }
+    .get-card{
+        gap: 10px;
+        width: 100%;
+    }
+    .get-card h1{
+        font-size: 1.7rem;
+    }
+    .get-card li{
+        padding: 10px;
+        color: white;
+        align-self: start;
+    }
 }

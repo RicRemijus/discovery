@@ -1,0 +1,48 @@
+:root{
+    --primary:#fff;
+}
+.custom-btn{
+    transition: background-color 0.3s;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 8px 20px;
+    border-radius: 5px;
+}
+/* .custom-btn:hover{
+    background-color: #0056b3;
+} */
+.btn-primary{
+   color: white;
+   background: #000d1a;
+   border: 1px solid white;
+}
+.btn-secondary{
+   color: white;
+   background: #13f003;
+   border: 1px solid white;
+}
+.btn-outline{
+    color: white;
+    border: 1px solid white;
+    transition: all 0.3s ease-out;
+    background-color: transparent;
+}
+.btn-normal{
+
+}
+.btn-medium{
+    font-size: 20px;
+    padding: 5px 10px;
+}
+.btn-large{
+    font-size: 24px;
+    color: #000d1a;
+    background-color: white;
+    transition: all 0.3s ease-out;
+}
+
+/* .icon{
+    margin-left: 10px;
+    font-size: 1.5rem;
+} */

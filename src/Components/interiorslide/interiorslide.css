@@ -1,0 +1,54 @@
+.interior-slide{
+    padding: 2rem 10%;
+    background-color: #000d1a;
+}
+.interior-slide h1{
+    color: white;
+}
+.interiorslide-container{
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 5rem;
+}
+.interior-text{
+    flex: 1;
+}
+.interior-text h2{ 
+    color: white;
+}
+.interior-right{
+    flex: 1 1 25rem;
+}
+.interior-img-card{
+    width: 100%;
+    height: 700px;
+    position: relative;
+}
+.pic{
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 13px;
+    position: absolute;
+    transition: opacity 1s ease-in-out;
+}
+.active{opacity: 1;}
+.butt{
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+.butt:hover{
+    background-color: blue;
+    animation: zoomOut 3s ease-out;
+}
+
+@media (max-width:768px) {
+    .interior-slide{
+        padding: 1rem;
+    }
+    .interiorslide-container{
+        margin-top: 0rem;
+    }
+}

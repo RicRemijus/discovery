@@ -1,10 +1,10 @@
 export const SliderData = [
   {
-    title: "Luxury Villa in Awka, Anambra",
+    title: "Luxury Villa in Udi Hill, Enugu",
     price: "$4,300.000",
     path: "/home",
     label: "View Home",
-    image: "./img/h36.jpg",
+    image: "./img/h20.jpg",
     alt: "House",
   },
   {
@@ -16,11 +16,11 @@ export const SliderData = [
     alt: "House",
   },
   {
-    title: "Great Seat-out in Jabi, Abuja",
+    title: "Seaside Edifice in Bonny, Rivers",
     price: "$4,300.000",
     path: "/home",
     label: "View Home",
-    image: "./img/z.jpg",
+    image: "./img/h23.jpg",
     alt: "House",
   },
   {
@@ -28,7 +28,7 @@ export const SliderData = [
     price: "$1,300.000",
     path: "/home",
     label: "View Home",
-    image: "./img/x2.jpg",
+    image: "./img/h16.jpg",
     alt: "House",
   },
   {
@@ -36,7 +36,7 @@ export const SliderData = [
     price: "$3,300.000",
     path: "/home",
     label: "View Home",
-    image: "./img/h102.jpg",
+    image: "./img/h14.jpg",
     alt: "House",
   },
   {
@@ -64,7 +64,7 @@ export const SliderData = [
     alt: "House",
   },
   {
-    title: "Great Seat-out in Bonny, Rivers",
+    title: "Country Home in Anambra",
     price: "$4,300.000",
     path: "/home",
     label: "View Home",
@@ -84,7 +84,7 @@ export const SliderData = [
     price: "$3,300.000",
     path: "/home",
     label: "View Home",
-    image: "./img/h23.jpg",
+    image: "./img/h24.jpg",
     alt: "House",
   },
   {
@@ -96,7 +96,7 @@ export const SliderData = [
     alt: "House",
   },
   {
-    title: "Luxury Villa in Osummanu, Anambra",
+    title: "Luxury Villa in Ota, Ogun",
     price: "$4,300.000",
     path: "/home",
     label: "View Home",
@@ -104,7 +104,7 @@ export const SliderData = [
     alt: "House",
   },
   {
-    title: "House Project in Sango, Ogun",
+    title: "Industrial Villa in Abiriba, Abia",
     price: "$4,950.000",
     path: "/home",
     label: "View Home",
@@ -124,7 +124,7 @@ export const SliderData = [
     price: "$1,300.000",
     path: "/home",
     label: "View Home",
-    image: "./img/h219.jpg",
+    image: "./img/h1.jpg",
     alt: "House",
   },
   {
@@ -132,7 +132,7 @@ export const SliderData = [
     price: "$3,300.000",
     path: "/home",
     label: "View Home",
-    image: "./img/h217.jpg",
+    image: "./img/h22.jpg",
     alt: "House",
   },
   {
@@ -140,7 +140,7 @@ export const SliderData = [
     price: "$3,000.000",
     path: "/home",
     label: "View Home",
-    image: "./img/x3.jpg",
+    image: "./img/h2.jpg",
     alt: "House",
   },
   {
